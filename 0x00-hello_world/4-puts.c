@@ -1,7 +1,8 @@
 # include <stdio.h>
 /**
   * main - first execution point
-  * Return - always return zero to mean success
+  *
+  * Return: always (0)
   */
 int main(void)
 {
