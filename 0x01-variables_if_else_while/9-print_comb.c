@@ -5,17 +5,15 @@
   */
 int main(void)
 {
-	char digit = '0';
-	char comma = ',';
-	char space = ' ';
+	int digit = '0';
 
 	while (digit <= '9')
 	{
 		putchar(digit);
 		if (digit <= '8')
 		{
-		putchar(comma);
-		putchar(space);
+		putchar(',');
+		putchar(' ');
 		}
 		digit++;
 	}
