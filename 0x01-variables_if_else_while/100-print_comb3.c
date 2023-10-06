@@ -18,6 +18,16 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			else if (b == a)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			else if (b < a)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		putchar('\n');
 	}
