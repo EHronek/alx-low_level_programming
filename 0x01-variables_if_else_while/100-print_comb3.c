@@ -13,17 +13,7 @@ int main(void)
 		{
 			putchar(a);
 			putchar(b);
-			if (b > a)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			else if (b == a)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			else if (b < a)
+			if (b > a || b == a || b < a)
 			{
 				putchar(',');
 				putchar(' ');
