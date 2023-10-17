@@ -7,13 +7,20 @@
   */
 void rev_string(char *s)
 {
-	int end = 10;
-	int start = 0;
+	char *end = s;
+	char *start = s;
 
-	while (end >= start)
+	while (*end)
 	{
-		_putchar(s[end]);
-		end--;
+		end++;
 	}
-	_putchar('\n');
+	end--;
+	while (end > start)
+	{
+		char temp = *start;
+		*start = *end;
+		*end = temp;
+		end--;
+		start++;
+	}
 }
