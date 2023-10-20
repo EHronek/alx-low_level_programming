@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
   * leet - function that encodes a strig into 1337
   * @l: pointer argument
