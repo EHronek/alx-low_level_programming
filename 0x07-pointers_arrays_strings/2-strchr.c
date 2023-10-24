@@ -8,19 +8,6 @@
   */
 char *_strchr(char *s, char c)
 {
-<<<<<<< HEAD
-	char *string = s;
-
-	while (*string != '\0')
-	{
-		if (*string == c)
-		{
-			return (s);
-		}
-		string++;
-	}
-	return (NULL);
-=======
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -30,5 +17,4 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 	return NULL;
->>>>>>> origin/master
 }
