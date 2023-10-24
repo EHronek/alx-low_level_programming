@@ -8,6 +8,7 @@
   */
 char *_strchr(char *s, char c)
 {
+<<<<<<< HEAD
 	char *string = s;
 
 	while (*string != '\0')
@@ -19,4 +20,15 @@ char *_strchr(char *s, char c)
 		string++;
 	}
 	return (NULL);
+=======
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+	return NULL;
+>>>>>>> origin/master
 }
