@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[a][b] < '0' || argv[a][b] > '9')
 			{
-				printf("error\n");
+				printf("Error\n");
 				return (1);
 			}
 		}
