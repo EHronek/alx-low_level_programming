@@ -63,4 +63,5 @@ int _sqrt_helper(int n, int i);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
 #endif
