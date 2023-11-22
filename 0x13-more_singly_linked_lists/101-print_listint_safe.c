@@ -12,7 +12,7 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *slow, *fast;
 
 	if (head == NULL)
-		return 0;
+		return (0);
 
 	slow = head;
 	fast = head->next;
@@ -51,5 +51,5 @@ size_t print_listint_safe(const listint_t *head)
 		slow = slow->next;
 		node_count++;
 	}
-	return node_count;
+	return (node_count);
 }
