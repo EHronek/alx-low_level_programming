@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	while ((rd = read(fd_src, buffer, BUFFER_SIZE)) > 0)
 		if (fd_dest == -1 || (write(fd_dest, buffer, rd) != rd))
 		{
-			dprintf(STDERR_FILENO, "Error: can't write to the file %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	if (rd == -1)
@@ -40,9 +40,9 @@ int main(int argc, char **argv)
 	if (close_src == -1 || close_dest == -1)
 	{
 		if (close_src == -1)
-			dprintf(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd_src);
+			dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd_src);
 		else if (close_dest == -1)
-			dprintf(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd_dest);
+			dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd_dest);
 		exit(100);
 	}
 	return (0);
