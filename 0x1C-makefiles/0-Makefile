@@ -1,10 +1,2 @@
-all: school
-
-main.o: 0x1B.c/main.c
-	gcc -c main.c
-
-school.o: 0x1B.c/school.c
-	gcc -c school.c
-
-school: main.o school.o
-	gcc -o school main.o school.o
+all: main.c school.c
+	gcc -o school main.c school.c
