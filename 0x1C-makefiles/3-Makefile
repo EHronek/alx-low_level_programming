@@ -18,7 +18,7 @@ school.o: $(word 2, $(SRC))
 	$(CC) -c -o $@ $(word 2, $(SRC))
 
 clean:
-	$(RM) $(NAME) *~ \
+	$(RM) $(NAME) *~ school.o
 
 oclean:
 	$(RM) $(OBJ)
@@ -26,4 +26,3 @@ oclean:
 fclean: clean oclean
 
 re: fclean all
-
