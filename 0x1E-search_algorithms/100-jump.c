@@ -5,6 +5,8 @@
  * @array: pointer to the first element of the array
  * @size: number of elements in the array
  * @value: value to search for in array
+ *
+ * Return: index location where value is at, -1 if not found
  */
 int jump_search(int *array, size_t size, int value)
 {
